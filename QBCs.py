@@ -450,8 +450,8 @@ def get_structure_by_name(kind,set ="mnist"):
 
 def main():
 
-    #set = "mnist"
-    set = "fashion_mnist"
+    set = "mnist"
+    #set = "fashion_mnist"
 
     #method = 'nb'
     #method = 'spode'
