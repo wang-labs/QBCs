@@ -97,11 +97,11 @@ class QBCs():
                 _height = size[0]
                 _width = size[1]
             else:
-                raise Exception('请传入一张或多张二维图像')
+                raise Exception('input images')
             center_x = int(np.ceil(_width / 2))
             center_y = int(np.ceil(_height / 2))
             if self._distance is None:
-                #采样点位置：中间、上左、上中、上右、中左、下右、下中、下左、中右
+                #sampling positions:middle, top left, top center, top right, center left, bottom right, bottom center, bottom left, center right
                 points = [(center_x, center_y),
                           (int(np.ceil(center_x / 2)), int(np.ceil(center_y / 2))),(center_x, int(np.ceil(center_y / 2))),
                           (int(np.ceil(_width - center_x / 2)), int(np.ceil(center_y / 2))),
